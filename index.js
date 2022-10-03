@@ -102,7 +102,7 @@ app.post('/resolve/:id', (req, res) => {
 
 
 ////////  Server
-const port = 8000;
+const PORT = process.env.PORT || 8000;
 app.listen(port, (err) => {
     if(err) console.log(err);
     console.log(`listening on port ${port}`);
