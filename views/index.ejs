@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Issue Tracker</title>
+
+    <%- include('../views/partials/head.ejs') %> 
+
+</head>
+<body>
+
+    <%- include('../views/partials/nav.ejs') %>
+
+    <div id="main-container" class="container">
+
+        <%- include('../views/partials/bug-form.ejs') %> 
+
+        <div class="col-12 justify-content-center">
+
+            <%- include('../views/partials/tables/bug-table.ejs') %> 
+
+        </div>
+    </div>
+</body>
+</html>
